@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class VendingMachine {
-    public static int[] notes = {1, 2, 5, 10, 50, 100, 500, 1000};
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -11,17 +10,15 @@ public class VendingMachine {
     }
 
     static void ChangeGenerator(int changeLeft) {
-        double itemCost = 0;
-        double moneyInserted = 0;
-        double thousand=0;
-        double fiveHundread = 0;
-        double hundred = 0;
-        double fifty = 0;
-        double twenty = 0;
-        double ten = 0;
-        double five = 0;
-        double two = 0;
-        double one = 0;
+        double thousand;
+        double fiveHundread;
+        double hundred;
+        double fifty;
+        double twenty;
+        double ten;
+        double five;
+        double two;
+        double one;
 
         thousand = changeLeft / 1000;
         changeLeft = changeLeft % 1000;
