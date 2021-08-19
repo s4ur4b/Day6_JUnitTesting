@@ -11,8 +11,8 @@ public class DecimalToBinary {
     int binary[] = new int[31];
     int index=0;
     while (number!=0){
-        binary[index++] = number;
-        number=number-1;
+        binary[index++] = number%2;
+        number=number/2;
 
     }
     for (int i = index - 1; i>=0;i--){
